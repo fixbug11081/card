@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import ConfettiCard from "./ConfettiCard";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <ConfettiCard
+        frontContent={<h3>Click to reveal</h3>}
+        backContent={<p>Surprise!</p>}
+      />
     </div>
   );
 }
-
-export default App;
